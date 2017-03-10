@@ -16,10 +16,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class ModBlocks {
 
-    public enum GUI_ENUM {
-
-    }
-
     public static BlockTownHall blockTownHall;
 
     public static void preInit(){
