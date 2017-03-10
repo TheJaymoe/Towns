@@ -22,7 +22,7 @@ public class ModBlocks {
 
     public static BlockTownHall blockTownHall;
 
-    public static void init(){
+    public static void preInit(){
         blockTownHall = new BlockTownHall();
 
         registerBlocks();

@@ -1,6 +1,7 @@
 package com.thejaymoe.towns;
 
 import com.thejaymoe.towns.block.ModBlocks;
+import com.thejaymoe.towns.item.ModItems;
 import com.thejaymoe.towns.proxy.CommonProxy;
 import com.thejaymoe.towns.tab.CreativeTabTowns;
 import com.thejaymoe.towns.utils.Reference;
@@ -30,7 +31,8 @@ public class Towns {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
         tabTowns = new CreativeTabTowns(CreativeTabs.getNextID(), "tabTowns");
-        ModBlocks.init();
+        ModItems.preInit();
+        ModBlocks.preInit();
         proxy.preInit(event);
     }
 
