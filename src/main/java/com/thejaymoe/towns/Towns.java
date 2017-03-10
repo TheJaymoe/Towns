@@ -3,6 +3,7 @@ package com.thejaymoe.towns;
 import com.thejaymoe.towns.block.ModBlocks;
 import com.thejaymoe.towns.proxy.CommonProxy;
 import com.thejaymoe.towns.tab.CreativeTabTowns;
+import com.thejaymoe.towns.utils.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -15,13 +16,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  * Created by Johnny on 2017-03-10.
  */
 
-@Mod(modid = Towns.MODID, version = Towns.VERSION, name = Towns.NAME)
+@Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME)
 public class Towns {
-    public static final String MODID = "towns";
-    public static final String VERSION = "1.0.0";
-    public static final String NAME = "Towns";
 
-    @SidedProxy(clientSide = "com.thejaymoe.towns.proxy.ClientProxy", serverSide = "com.thejaymoe.towns.proxy.CommonProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
     public static CommonProxy proxy;
 
     @Mod.Instance
