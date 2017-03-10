@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "towns",
+  "name": "Towns",
+  "description": "A minecraft mod for creating and managing towns.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["TheJayMoe", "Kittenqty"],
+  "credits": "The Forge and FML guys, for making Forge and FML",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
