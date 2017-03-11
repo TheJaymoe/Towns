@@ -54,12 +54,6 @@ public class TownsCommands extends CommandBase {
                 }
             } else if(arg1.matches("\\bstatus")) {
                 ep.sendMessage(new TextComponentString("Status of Town!"));
-            } else if(arg1.matches("\\bopen")) {
-                if(!ep.world.isRemote) {
-                    //ep.openGui(Towns.instance, 1, ep.world, ep.getPosition().getX(), ep.getPosition().getY(), ep.getPosition().getZ());
-                    Minecraft.getMinecraft().displayGuiScreen(new TownGui());
-                }
-                ep.sendMessage(new TextComponentString("Opening GUI"));
             }
         }
     }

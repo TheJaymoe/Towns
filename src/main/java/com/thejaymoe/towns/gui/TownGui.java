@@ -32,10 +32,8 @@ public class TownGui extends GuiScreen {
         closebutton = 0;
         actionbutton = 1;
 
-        this.buttonList.add(new GuiButton(closebutton, this.width - 20, 0, "x"));
-        this.buttonList.add(new GuiButton(actionbutton, this.width / 2 - 100, this.height / 2 - 24, "A BUTTON TO PRESS"));
-        //this.buttonList.add(this.a = new GuiButton(0, this.width / 2 - 100, this.height / 2 - 24, "this is button a"));
-        //this.buttonList.add(this.b = new GuiButton(1, this.width / 2 - 100, this.height / 2 + 4, "This is button b"));
+        // GuiButton(ID, pos x, pos y, width, height, text)
+        this.buttonList.add(new GuiButton(closebutton, this.width - 20, 0, 20, 20, "x"));
 
         super.initGui();
     }
