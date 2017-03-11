@@ -1,0 +1,7 @@
+# Items
+
+# Blocks
+tile.blockTownHall.name=Town Hall
+
+## Commands
+commands.towns.usage=/towns [create] [join <town_id>] [invite <playername>] [status]
