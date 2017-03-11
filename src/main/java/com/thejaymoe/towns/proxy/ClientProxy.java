@@ -1,6 +1,5 @@
 package com.thejaymoe.towns.proxy;
 
-import com.thejaymoe.towns.Towns;
 import com.thejaymoe.towns.block.ModBlocks;
 import com.thejaymoe.towns.utils.Reference;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
