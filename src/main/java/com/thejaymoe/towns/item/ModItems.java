@@ -15,13 +15,13 @@ public class ModItems {
     public static Item itemTownHall;
 
     public static void preInit(){
-        itemTownHall = new ItemTownHall("itemTownHall");
+        //itemTownHall = new ItemTownHall("itemTownHall");
 
         registerItems();
     }
 
     public static void registerItems(){
-        GameRegistry.register(itemTownHall, new ResourceLocation(Reference.MODID, "itemTownHall"));
+        //GameRegistry.register(itemTownHall, new ResourceLocation(Reference.MODID, "itemTownHall"));
     }
 
     public static void registerRenders(){}

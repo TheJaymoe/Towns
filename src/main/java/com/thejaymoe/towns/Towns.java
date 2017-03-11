@@ -1,6 +1,10 @@
 package com.thejaymoe.towns;
 
 import com.thejaymoe.towns.block.ModBlocks;
+import com.thejaymoe.towns.capability.CapabilityHandler;
+import com.thejaymoe.towns.capability.IMana;
+import com.thejaymoe.towns.capability.Mana;
+import com.thejaymoe.towns.capability.ManaStorage;
 import com.thejaymoe.towns.item.ModItems;
 import com.thejaymoe.towns.proxy.CommonProxy;
 import com.thejaymoe.towns.tab.CreativeTabTowns;
@@ -12,6 +16,8 @@ import net.minecraft.command.ServerCommandManager;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -47,12 +53,14 @@ public class Towns {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
+        CapabilityManager.INSTANCE.register(IMana.class, new ManaStorage(), Mana.class);
+        MinecraftForge.EVENT_BUS.register(new TownsEventHandler());
+        FMLCommonHandler.instance().bus().register(new TownsEventHandler());
         proxy.init(event);
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
-        MinecraftForge.EVENT_BUS.register(new TownsEventHandler());
         proxy.postInit(event);
     }
 

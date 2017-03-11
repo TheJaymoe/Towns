@@ -20,7 +20,6 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         OBJLoader.INSTANCE.addDomain(Reference.MODID);
         register3DModel(Item.getItemFromBlock(ModBlocks.blockTownHall));
-        register3DModel(ModItems.itemTownHall);
     }
 
     public void register3DModel(Item item) {
