@@ -9,7 +9,7 @@
       "model": "towns:blocktownhall.obj",
       "transform": {
         "scale": 0.05,
-        "translation": [0, -0.25, 0.1],
+        "translation": [0, -0.25, 0.08],
         "rotation": [{"x": 0}, {"y": 90}, {"z": 0}]
       }
     },
@@ -17,7 +17,7 @@
       "model": "towns:blocktownhall.obj",
       "transform": {
         "scale": 0.05,
-        "translation": [0, -0.25, -0.1],
+        "translation": [0, -0.25, -0.08],
         "rotation": [{"x": 0}, {"y": 270}, {"z": 0}]
       }
     },
@@ -25,7 +25,7 @@
       "model": "towns:blocktownhall.obj",
       "transform": {
         "scale": 0.05,
-        "translation": [-0.1, -0.25, 0],
+        "translation": [-0.08, -0.25, 0],
         "rotation": [{"x": 0}, {"y": 0}, {"z": 0}]
       }
     },
@@ -33,7 +33,7 @@
       "model": "towns:blocktownhall.obj",
       "transform": {
         "scale": 0.05,
-        "translation": [0.1, -0.25, 0],
+        "translation": [0.08, -0.25, 0],
         "rotation": [{"x": 0}, {"y": 180}, {"z": 0}]
       }
     },
