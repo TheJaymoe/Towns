@@ -1,9 +1,42 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "towns:blockTownHall.obj"
+    "custom": { "flip-v": true },
+    "model": "towns:blocktownhall.obj"
   },
   "variants": {
+    "facing=north": {
+      "model": "towns:blocktownhall.obj",
+      "transform": {
+        "scale": 0.05,
+        "translation": [0, -0.25, 0.08],
+        "rotation": [{"x": 0}, {"y": 90}, {"z": 0}]
+      }
+    },
+    "facing=south": {
+      "model": "towns:blocktownhall.obj",
+      "transform": {
+        "scale": 0.05,
+        "translation": [0, -0.25, -0.08],
+        "rotation": [{"x": 0}, {"y": 270}, {"z": 0}]
+      }
+    },
+    "facing=east": {
+      "model": "towns:blocktownhall.obj",
+      "transform": {
+        "scale": 0.05,
+        "translation": [-0.08, -0.25, 0],
+        "rotation": [{"x": 0}, {"y": 0}, {"z": 0}]
+      }
+    },
+    "facing=west": {
+      "model": "towns:blocktownhall.obj",
+      "transform": {
+        "scale": 0.05,
+        "translation": [0.08, -0.25, 0],
+        "rotation": [{"x": 0}, {"y": 180}, {"z": 0}]
+      }
+    },
     "inventory": [
       {
         "transform": {

@@ -1,5 +1,6 @@
 package com.thejaymoe.towns.item;
 
+import com.thejaymoe.towns.Towns;
 import net.minecraft.item.Item;
 
 /**
@@ -7,7 +8,8 @@ import net.minecraft.item.Item;
  */
 public class ItemTownHall extends Item{
 
-    public ItemTownHall() {
-
+    public ItemTownHall(String name) {
+        setUnlocalizedName(name);
+        setCreativeTab(Towns.tabTowns);
     }
 }
