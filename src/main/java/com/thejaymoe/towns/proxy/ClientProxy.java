@@ -2,6 +2,7 @@ package com.thejaymoe.towns.proxy;
 
 import com.thejaymoe.towns.Towns;
 import com.thejaymoe.towns.block.ModBlocks;
+import com.thejaymoe.towns.item.ModItems;
 import com.thejaymoe.towns.utils.Reference;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -20,6 +21,7 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         OBJLoader.INSTANCE.addDomain(Reference.MODID);
         register3DModel(Item.getItemFromBlock(ModBlocks.blockTownHall));
+        register3DModel(ModItems.itemTownHall);
     }
 
     public void register3DModel(Item item) {
@@ -28,6 +30,7 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void init(FMLInitializationEvent event) {
+        ModItems.registerRenders();
         ModBlocks.registerRenders();
     }
 

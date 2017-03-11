@@ -1,6 +1,5 @@
 package com.thejaymoe.towns.block;
 
-import com.thejaymoe.towns.Towns;
 import com.thejaymoe.towns.block.townhall.BlockTownHall;
 import com.thejaymoe.towns.utils.Reference;
 import net.minecraft.block.Block;

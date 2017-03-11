@@ -1,6 +1,5 @@
 package com.thejaymoe.towns.item;
 
-import com.thejaymoe.towns.Towns;
 import com.thejaymoe.towns.utils.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -16,7 +15,7 @@ public class ModItems {
     public static Item itemTownHall;
 
     public static void preInit(){
-        itemTownHall = new ItemTownHall();
+        itemTownHall = new ItemTownHall("itemTownHall");
 
         registerItems();
     }
